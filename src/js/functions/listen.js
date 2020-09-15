@@ -42,11 +42,13 @@ function setupTextareas() {
       }
 
       if (typedCharacters.join('') === copyText.slice(0, progress + 1)) {
+        // eslint-disable-next-line no-param-reassign
         event.target.value = typedCharacters.join('');
         advance();
         progress++;
       } else {
         report.errors++;
+        // eslint-disable-next-line no-param-reassign
         event.target.value = copyText.slice(0, progress);
 
         const p = event.target.parentNode;

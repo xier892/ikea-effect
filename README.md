@@ -1,5 +1,2 @@
-# itcss-website-template
-to delete all .keep files:
-```
-del /s /q *.keep
-```
+# ikea-effect
+https://xier892.github.io/ikea-effect/
