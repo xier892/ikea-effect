@@ -1,0 +1,45 @@
+.typing-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-feature-settings: 'ss02';
+  color: var(--color-gray-2);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  outline: 1px dashed var(--color-gray-3);
+  white-space: break-spaces;
+  transition: box-shadow 0.1s cubic-bezier(0.77,0,0.18,1),
+              outline-color 0.1s cubic-bezier(0.77,0,0.18,1);
+}
+
+.typing-area:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-blue-1);
+  outline-color: var(--color-blue-3);
+}
+
+.typing-area:focus {
+  outline: 1px solid var(--color-blue-1);
+  text-decoration: underline;
+  text-decoration-color: var(--color-blue-3);
+}
+
+.typing-area:disabled {
+  display: none;
+}
+
+.error .typing-area {
+  outline-color: var(--color-error);
+  box-shadow: 0 5px 20 var(--color-error);
+  text-decoration-color: var(--color-error);
+}

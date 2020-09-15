@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url('./assets/font/poppins-latin-400.woff2') format('woff2'),
+    url('./assets/font/poppins-latin-400.woff') format('woff'),
+    url('./assets/font/poppins-latin-400.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    url('./assets/font/poppins-latin-500.woff2') format('woff2'),
+    url('./assets/font/poppins-latin-500.woff') format('woff'),
+    url('./assets/font/poppins-latin-500.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    url('./assets/font/poppins-latin-700.woff2') format('woff2'),
+    url('./assets/font/poppins-latin-700.woff') format('woff'),
+    url('./assets/font/poppins-latin-700.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:
+    url('./assets/font/poppins-latin-800.woff2') format('woff2'),
+    url('./assets/font/poppins-latin-800.woff') format('woff'),
+    url('./assets/font/poppins-latin-800.otf') format('otf');
+}

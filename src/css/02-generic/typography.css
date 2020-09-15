@@ -1,0 +1,43 @@
+html {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-gray-2);
+  font-size: var(--font-size-body);
+}
+
+a {
+  color: inherit;
+}
+
+p, h3, h2, h1 {
+  margin-bottom: var(--paragraph-spacing);
+}
+
+h3, h2 {
+  margin-top: calc(var(--paragraph-spacing) * 2);
+}
+
+p, td {
+  line-height: var(--line-height-body);
+  font-feature-settings: 'ss02';
+}
+
+h3 {
+  font-weight: 700;
+  font-feature-settings: 'ss02';
+}
+
+h2 {
+  line-height: var(--line-height-h2);
+  font-size: var(--font-size-h2);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-feature-settings: 'ss01, ss02';
+}
+
+h1 {
+  font-family: 'Changa One', cursive;
+  line-height: var(--line-height-h1);
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  word-break: break-word;
+}

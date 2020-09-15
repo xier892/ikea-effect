@@ -1,0 +1,23 @@
+.column-guides {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  padding: 0 !important;
+}
+
+.column-guide {
+  height: 100%;
+  border-left: 1px solid var(--color-gray-4);
+  border-right: 1px solid var(--color-gray-4);
+}
+
+.column-guide:not(.start-1) {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .column-guide:not(.start-1) {
+    display: block;
+  }
+}

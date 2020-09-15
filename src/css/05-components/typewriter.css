@@ -1,0 +1,45 @@
+.typewriter-container {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid var(--color-gray-2);
+  min-height: 1em;
+  touch-action: none;
+}
+
+.typewriter-container::before,
+.typewriter-container::after,
+.typewriter-container .handle {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-gray-2);
+  background-color: #fff;
+}
+
+.typewriter-container .handle.topLeft {
+  top: -6px;
+  left: -6px;
+}
+
+.typewriter-container .handle.topRight {
+  top: -6px;
+  right: -6px;
+}
+
+.typewriter-container::before {
+  bottom: -6px;
+  left: -6px;
+}
+
+.typewriter-container::after {
+  bottom: -6px;
+  right: -6px;
+}
+
+.Typewriter__wrapper {
+  white-space: break-spaces;
+}

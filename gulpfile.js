@@ -13,8 +13,8 @@ const uglifycss = require('gulp-uglifycss');
 
 gulp.task('js', function() {
   return gulp.src([
-    'src/js/*.js',
-    'src/js/*/*.js'])
+    'src/js/*/*.js',
+    'src/js/*.js'])
     .pipe(concat('index.js'))
     .pipe(babel({
       presets: ['@babel/preset-env']

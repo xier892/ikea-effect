@@ -1,0 +1,59 @@
+.text {
+  top: 100vh;
+  background-color: #fff;
+  align-items: start;
+}
+
+/* .text .column-guides,
+.text .column-guide {
+  border-color: var(--color-yellow-3);
+} */
+
+.text > .grid-wrapper > * {
+  grid-row-start: 1;
+}
+
+.text section {
+  transition: opacity 640ms cubic-bezier(0.77,0,0.18,1);
+}
+
+.text section:focus-within h2 {
+  color: var(--color-blue-1);
+}
+
+.text p {
+  position: relative;
+}
+
+.text .copy {
+  user-select: none;
+  display: block;
+  white-space: break-spaces;
+  color: var(--color-gray-3);
+}
+
+.text .copy.complete {
+  color: var(--color-gray-2);
+  user-select: all;
+}
+
+.text .inaccessible {
+  cursor: default;
+}
+
+.text .inaccessible h2,
+.text .inaccessible h3 {
+  transition: color 640ms cubic-bezier(0.77,0,0.18,1);
+  color: var(--color-gray-3);
+}
+
+.text .inaccessible .copy,
+.typing-area:disabled ~ .copy:not(.complete) {
+  display: inline;
+  color: var(--color-gray-4);
+  background-color: var(--color-gray-4);
+}
+
+.text p.error {
+  animation: shake-horizontal 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
