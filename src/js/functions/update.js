@@ -10,7 +10,7 @@ function updateSectionData(section = GLOBAL.SECTIONS[0], report = {}) {
   const tdWpm = section.TABLE_ROW.getElementsByClassName('wpm')[0];
   const tdSectionTitle = section.TABLE_ROW.getElementsByClassName('section-title')[0];
 
-  tdWpm.textContent = Math.round(section.AVERAGE_WPM);
+  tdWpm.textContent = Math.ceil(section.AVERAGE_WPM);
   section.TABLE_ROW.classList.add('complete');
 
   if (GLOBAL.SECTIONS.indexOf(section) === GLOBAL.SECTIONS.length - 1) {
@@ -27,9 +27,9 @@ function updateFinalData() {
 
   if (wpms[0] - average(wpms.slice(1)) < 0) {
     console.log('average adjusted');
-    GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.round(average(wpms.slice(1)));
+    GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.ceil(average(wpms.slice(1)));
   } else {
-    GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.round(average(wpms));
+    GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.ceil(average(wpms));
   }
 
   GLOBAL.COMPLETE = true;
