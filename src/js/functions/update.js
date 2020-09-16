@@ -19,15 +19,19 @@ function updateSectionData(section = GLOBAL.SECTIONS[0], report = {}) {
 }
 
 function updateFinalData() {
-  const report = {
-    wpms: []
-  };
+  const wpms = [];
 
   for (let i = 0; i < GLOBAL.SECTIONS.length; i++) {
-    report.wpms.push(GLOBAL.SECTIONS[i].AVERAGE_WPM);
+    wpms.push(GLOBAL.SECTIONS[i].AVERAGE_WPM);
   }
 
-  GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.round(average(report.wpms));
+  if (wpms[0] - average(wpms.slice(1)) < 0) {
+    console.log('average adjusted');
+    GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.round(average(wpms.slice(1)));
+  } else {
+    GLOBAL.FINAL_DATA.AVERAGE_WPM = Math.round(average(wpms));
+  }
+
   GLOBAL.COMPLETE = true;
   console.log(GLOBAL.FINAL_DATA);
 
