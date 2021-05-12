@@ -33,7 +33,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.1.0",
-    "postcss": "^7.0.32",
+    "postcss": "^8.2.10",
     "postcss-css-variables": "^0.13.0",
     "uglify-es": "^3.3.9"
   }
